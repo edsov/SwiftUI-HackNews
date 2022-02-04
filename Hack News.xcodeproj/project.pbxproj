@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B10E5FD27AB2E2A004124D6 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B10E5FC27AB2E2A004124D6 /* NetworkManager.swift */; };
+		2B10E5FF27AB3136004124D6 /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B10E5FE27AB3136004124D6 /* PostData.swift */; };
+		2B10E60227AB59FF004124D6 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B10E60127AB59FF004124D6 /* DetailView.swift */; };
+		2B10E60427AB618B004124D6 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B10E60327AB618B004124D6 /* WebView.swift */; };
 		2BDAC08927AB2143002AD5B0 /* Hack_NewsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDAC08827AB2143002AD5B0 /* Hack_NewsApp.swift */; };
 		2BDAC08B27AB2143002AD5B0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDAC08A27AB2143002AD5B0 /* ContentView.swift */; };
 		2BDAC08D27AB2145002AD5B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BDAC08C27AB2145002AD5B0 /* Assets.xcassets */; };
@@ -14,6 +18,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B10E5FC27AB2E2A004124D6 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		2B10E5FE27AB3136004124D6 /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
+		2B10E60127AB59FF004124D6 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		2B10E60327AB618B004124D6 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		2B10E60527AB64C8004124D6 /* Hack News.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Hack News.entitlements"; sourceTree = "<group>"; };
 		2BDAC08527AB2143002AD5B0 /* Hack News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hack News.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BDAC08827AB2143002AD5B0 /* Hack_NewsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hack_NewsApp.swift; sourceTree = "<group>"; };
 		2BDAC08A27AB2143002AD5B0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +41,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B10E5FB27AB2DF7004124D6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2B10E5FC27AB2E2A004124D6 /* NetworkManager.swift */,
+				2B10E5FE27AB3136004124D6 /* PostData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2B10E60027AB59A6004124D6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2BDAC08A27AB2143002AD5B0 /* ContentView.swift */,
+				2B10E60127AB59FF004124D6 /* DetailView.swift */,
+				2B10E60327AB618B004124D6 /* WebView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		2BDAC07C27AB2143002AD5B0 = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +79,10 @@
 		2BDAC08727AB2143002AD5B0 /* Hack News */ = {
 			isa = PBXGroup;
 			children = (
+				2B10E60527AB64C8004124D6 /* Hack News.entitlements */,
+				2B10E60027AB59A6004124D6 /* Views */,
+				2B10E5FB27AB2DF7004124D6 /* Models */,
 				2BDAC08827AB2143002AD5B0 /* Hack_NewsApp.swift */,
-				2BDAC08A27AB2143002AD5B0 /* ContentView.swift */,
 				2BDAC08C27AB2145002AD5B0 /* Assets.xcassets */,
 				2BDAC08E27AB2145002AD5B0 /* Preview Content */,
 			);
@@ -137,7 +167,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B10E5FD27AB2E2A004124D6 /* NetworkManager.swift in Sources */,
+				2B10E5FF27AB3136004124D6 /* PostData.swift in Sources */,
 				2BDAC08B27AB2143002AD5B0 /* ContentView.swift in Sources */,
+				2B10E60427AB618B004124D6 /* WebView.swift in Sources */,
+				2B10E60227AB59FF004124D6 /* DetailView.swift in Sources */,
 				2BDAC08927AB2143002AD5B0 /* Hack_NewsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,9 +300,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Hack News/Hack News.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Hack News/Preview Content\"";
+				DEVELOPMENT_TEAM = L8PMRKXQ39;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -283,6 +319,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "edso.com.Hack-News";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -294,9 +331,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Hack News/Hack News.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Hack News/Preview Content\"";
+				DEVELOPMENT_TEAM = L8PMRKXQ39;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -311,6 +350,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "edso.com.Hack-News";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
